@@ -1,4 +1,7 @@
-// from jiapeng 
+/** from jiapeng
+Runtime: 2 ms, faster than 98.63% of Java online submissions for Combination Sum II.
+Memory Usage: 39.7 MB, less than 75.86% of Java online submissions for Combination Sum II.
+**/
 class Solution {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
         Arrays.sort(candidates);
