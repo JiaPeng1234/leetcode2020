@@ -2,7 +2,7 @@ https://leetcode.com/problems/permutations/
 // Jiacheng Yang
 // Runtime: 4 ms
 // Memory Usage: 7.5 MB
-```c++
+
 class Solution {
 public:
     vector<vector<int>> permute(vector<int>& nums) {
@@ -29,4 +29,4 @@ private:
         }
     }
 };
-```
+
