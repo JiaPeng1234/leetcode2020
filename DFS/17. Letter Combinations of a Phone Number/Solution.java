@@ -9,7 +9,7 @@ Memory Usage: 39.8 MB, less than 42.03% of Java online submissions for Letter Co
 
 class Solution {
     public List<String> letterCombinations(String digits) {
-        HashMap<Character, char []> map = new HashMap<>();
+        HashMap<Character, char []> map = new HashMap<>();  // could use HashMap<Charater, String> as well
         map.put('2', new char[]{'a', 'b', 'c'});
         map.put('3', new char[]{'d', 'e', 'f'});
         map.put('4', new char[]{'g', 'h', 'i'});
@@ -26,7 +26,7 @@ class Solution {
     
     private void dfs(String digits, HashMap<Character, char []> map, List<String> ans, String cur, int starter){
         if(digits.length()==cur.length()){
-            ans.add(cur);  // no need to use new String(cur), it will duplicated automaticlly due to String.Class feature
+            ans.add(cur);  // no need to use new String(cur), it will be duplicated automaticlly due to String.Class feature
             return;
         }
         for(int i=starter; i<digits.length(); i++){
