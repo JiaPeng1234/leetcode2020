@@ -66,7 +66,9 @@ leetcode 2020 guide by huahua
            print x , y
        x , y = y , x
   ```
-- Python代码块注释和行注释.
+- Python代码块注释和行注释.  
+对于复杂的操作, 应该在其操作开始前写上若干行注释. 对于不是一目了然的代码, 应在其行尾添加注释.  
+为了提高可读性, 注释应该至少离开代码1个tab的距离
 
   ```python
   # We use a weighted dictionary search to find out where i is in
