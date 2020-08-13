@@ -2,8 +2,8 @@
 
 /**
 By Jiapeng
-Runtime: 40 ms, faster than 97.90% of Python3 online submissions for Combination Sum II.
-Memory Usage: 13.9 MB, less than 37.81% of Python3 online submissions for Combination Sum II.
+Runtime: 1 ms, faster than 99.65% of Java online submissions for Permutations II.
+Memory Usage: 40.3 MB, less than 54.42% of Java online submissions for Permutations II.
 **/
 
 class Solution {
