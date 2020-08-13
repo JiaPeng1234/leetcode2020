@@ -1,8 +1,8 @@
 # https://leetcode.com/problems/letter-case-permutation/
 
 # By Jiapeng
-Runtime: 64 ms, faster than 61.44% of Python3 online submissions for Letter Case Permutation.
-Memory Usage: 14.4 MB, less than 50.53% of Python3 online submissions for Letter Case Permutation.
+# Runtime: 64 ms, faster than 61.44% of Python3 online submissions for Letter Case Permutation.
+# Memory Usage: 14.4 MB, less than 50.53% of Python3 online submissions for Letter Case Permutation.
 
 class Solution:
     def letterCasePermutation(self, S: str) -> List[str]:
