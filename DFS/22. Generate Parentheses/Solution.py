@@ -3,7 +3,7 @@
 # By Jiapeng
 # Runtime: 24 ms, faster than 98.88% of Python3 online submissions for Generate Parentheses.
 # Memory Usage: 14.2 MB, less than 29.90% of Python3 online submissions for Generate Parentheses.
-# 此方法可以作为DFS参考框架
+# DFS框架参考2：此方法可以作为DFS参考框架
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
         ans = []
