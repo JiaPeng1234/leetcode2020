@@ -13,7 +13,7 @@ class Solution:
         if target == 0:     # 注意点2 出口条件
             ans.append(cur)     # 注意点3 append的必须是cur的拷贝 和注意点7 相结合考虑
             return
-        for i in range(starter, len(candidates)):   # 注意点4 使用starter
+        for i in range(starter, len(candidates)):   # 注意点4 使用starter从下一个元素开始遍历
             if candidates[i]>target:    # 注意点5 剪枝条件 break 不符合该条件就一票否决for循环后面所有元素
                 break
             # need to ensure when i equals i-1, then it must be the first element that being tranversed in the current loop     
