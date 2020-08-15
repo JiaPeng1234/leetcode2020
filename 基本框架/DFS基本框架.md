@@ -1,3 +1,31 @@
+## 1. 基础模板
+```python
+# code in python
+nums=[...]
+ans=[]
+m=len(nums)
+nums.sort()
+
+# C(m,n)
+func dfs(n,d,s,cur):
+    if d==n:
+        ans.append(cur[0:d])
+        return
+    for i=s to m-1:
+        if i>s and nums[i]==nums[i-1]:
+            continue    # 去重
+        cur[d]=nums[i]
+        dfs(n,d+1,i+1,cur)
+        # 没有必要回溯，因为下次赋值会直接覆盖当前值且最终append的值是cur[0:d]
+        # cur[d]=None   
+        # hin: append&pop() 回溯不如直接赋值的回溯节省时间
+        
+for i=0 to m:   # 调用dfs
+    dfs(i,0,0,[None]*i)
+```
+
+## 2. 几种典型模板
+
 按照顺序观看：
 
 1. 参考40. Combination Sum II 的python解法Solution1：
