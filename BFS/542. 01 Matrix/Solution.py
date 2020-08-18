@@ -15,7 +15,7 @@ class Solution:
         if len(matrix) == 0 or len(matrix[0]) == 0:
             return matrix
         mapp = [[0] * len(matrix[0]) for _ in range(len(matrix))]
-        q = []
+        q = collections.deque()
         for i in range(len(matrix)):
             for j in range(len(matrix[0])):
                 if matrix[i][j] == 0:
@@ -27,7 +27,7 @@ class Solution:
             size = len(q)
             while size:
                 size -= 1
-                node = q.pop(0)
+                node = q.popleft()
                 for i in range(4):
                     x = node[0] + adjacent[i]
                     y = node[1] + adjacent[i+1]
@@ -39,7 +39,4 @@ class Solution:
             steps += 1
         return matrix
       
-# By Jiapeng
-# BFS optimized, compared with Solution1, using original matrix instead of a new array as "maskmap"
-# Runtime: 940 ms, faster than 37.10% of Python3 online submissions for 01 Matrix.
-# Memory Usage: 16.5 MB, less than 58.37% of Python3 online submissions for 01 Matrix.
+# By 
