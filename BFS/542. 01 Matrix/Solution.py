@@ -2,8 +2,8 @@
 
 # By Jiapeng
 # BFS+mask, update matrix[x][y] with the variable steps
-# Runtime: 940 ms, faster than 37.10% of Python3 online submissions for 01 Matrix.
-# Memory Usage: 16.5 MB, less than 58.37% of Python3 online submissions for 01 Matrix.
+# Runtime: 812 ms, faster than 57.97% of Python3 online submissions for 01 Matrix.
+# Memory Usage: 16.6 MB, less than 53.19% of Python3 online submissions for 01 Matrix.
 class Solution:
     def updateMatrix(self, matrix: List[List[int]]) -> List[List[int]]:
         """
@@ -15,7 +15,7 @@ class Solution:
         if len(matrix) == 0 or len(matrix[0]) == 0:
             return matrix
         mapp = [[0] * len(matrix[0]) for _ in range(len(matrix))]
-        q = collections.deque()
+        q = collections.deque()     # using deque can improve efficiency
         for i in range(len(matrix)):
             for j in range(len(matrix[0])):
                 if matrix[i][j] == 0:
