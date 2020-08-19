@@ -18,3 +18,13 @@ while not q.empty():
     ++steps
 return -1
 ```
+
+## 2. 几种典型模板
+
+按照顺序观看：
+
+1. 参考127. Word Ladder 的python解法Solution1：
+https://github.com/XincredibleY/leetcode2020/blob/master/BFS/127.%20Word%20Ladder/Solution.py
+
+2. 双向BFS，参考127. Word Ladder 的python解法Solution3：
+https://github.com/XincredibleY/leetcode2020/blob/master/BFS/127.%20Word%20Ladder/Solution.py
