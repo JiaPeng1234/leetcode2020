@@ -1,9 +1,9 @@
 # https://leetcode.com/problems/word-ladder/
 
 # By Jiapeng
+# BFS
 # Runtime: 116 ms, faster than 91.40% of Python3 online submissions for Word Ladder.
 # Memory Usage: 17.1 MB, less than 53.45% of Python3 online submissions for Word Ladder.
-
 class Solution:
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
         if endWord not in wordList:
@@ -31,3 +31,9 @@ class Solution:
                             q.append(new_state)
             steps += 1
         return 0
+
+# By Jiapeng
+# Bidirectional BFS, can still be optimized (by turning wordList to map which is already done in Solution1)
+# Compared with normal BFS, bidirectional BFS saves huge amount of time in large data scale
+# Runtime: 104 ms, faster than 94.11% of Python3 online submissions for Word Ladder.
+# Memory Usage: 14.8 MB, less than 75.50% of Python3 online submissions for Word Ladder.
