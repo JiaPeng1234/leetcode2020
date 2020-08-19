@@ -102,7 +102,8 @@ class Solution3:
                 for i in range(len(current_word)):
                     for c in string.ascii_lowercase: 
                         new_word = current_word[:i] + c + current_word[i+1:]
-                        if new_word in q2:
+                        if new_word in q2:      # VERY IMPORTANT: the return condition should be inside the for-loop not before for-loop(like in BFS-framework), 
+                                                # cause current_word is 100% not in q2 which will return 0 in all the test cases, we should use new_word instead
                             return steps + 2    # BFS from two sides, need to add 2 here
                         if new_word in wordList:
                             wordList.remove(new_word)
