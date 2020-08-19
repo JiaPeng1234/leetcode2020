@@ -4,6 +4,7 @@
 # BFS
 # Runtime: 116 ms, faster than 91.40% of Python3 online submissions for Word Ladder.
 # Memory Usage: 17.1 MB, less than 53.45% of Python3 online submissions for Word Ladder.
+# BFS框架参考1：此方法可以作为BFS参考框架
 class Solution:
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
         if endWord not in wordList:
