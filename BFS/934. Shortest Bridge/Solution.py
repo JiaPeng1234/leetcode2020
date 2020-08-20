@@ -8,8 +8,8 @@ class Solution:
     def shortestBridge(self, A: List[List[int]]) -> int:
         """
         step 1: color one of the two island to number 2
-        step 2: put each island to one set
-        step 3: use bidirectional BFS from the two set
+        step 2: put each island into one set
+        step 3: begin bidirectional BFS from the two set
         Reference: if having problem using bidirectional BFS, then check out the 3rd python solution of leetcode 127
         """
         def dfs(x, y):
