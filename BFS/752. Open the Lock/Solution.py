@@ -19,7 +19,7 @@ class Solution:
                 size -= 1
                 current = q.popleft()
                 for i in range(4):
-                    for j in [(int(current[i])+1)%10, (int(current[i])-1)%10]:
+                    for j in [(int(current[i]) + 1 + 10) % 10, (int(current[i]) - 1 + 10) % 10]:    # notice here to add 10, cause (0-1)%10=-1
                         new = current[:i] + str(j) + current[i+1:]
                         if new in seen:
                             continue
