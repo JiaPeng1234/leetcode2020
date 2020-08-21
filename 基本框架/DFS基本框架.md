@@ -40,5 +40,7 @@ https://github.com/XincredibleY/leetcode2020/blob/master/DFS/47.%20Permutations%
 4. 参考79. Word Search的python解法Solution1：
 https://github.com/XincredibleY/leetcode2020/blob/master/DFS/79.%20Word%20Search/Solution.py
 
-5. partition problem 参考93. Restore IP Addresses的python解法Solution1：
+5. partition problem 参考698. Partition to K Equal Sum Subsets的python解法Solution1：
+https://github.com/XincredibleY/leetcode2020/edit/master/DFS/698.%20Partition%20to%20K%20Equal%20Sum%20Subsets/Solution.py
+以及：参考93. Restore IP Addresses的python解法Solution1：
 https://github.com/XincredibleY/leetcode2020/blob/master/DFS/93.%20Restore%20IP%20Addresses/Solution.py
