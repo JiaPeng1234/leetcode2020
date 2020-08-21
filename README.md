@@ -39,7 +39,7 @@ leetcode 2020 guide by huahua
   No:  def complex(real, imag = 0.0): return magic(r = real, i = imag)
   ```
 - 如果语句中有不同优先级的运算符，请在最低级运算符符周围添加一个空格（例如有乘除加减，加减就是最低级运算符）  
-- 如果语句中有不同优先级的运算符，优先运算的运算符不用添加空格
+- 如果语句中有不同优先级的运算符，优先运算的运算符不用添加空格  
 
   ```python
   Yes: x = 1 + 2
