@@ -39,3 +39,6 @@ https://github.com/XincredibleY/leetcode2020/blob/master/DFS/47.%20Permutations%
 
 4. 参考79. Word Search的python解法Solution1：
 https://github.com/XincredibleY/leetcode2020/blob/master/DFS/79.%20Word%20Search/Solution.py
+
+5. partition problem 参考698. Word Search的python解法Solution1：
+https://github.com/XincredibleY/leetcode2020/blob/master/DFS/698.%20Partition%20to%20K%20Equal%20Sum%20Subsets/Solution.py
