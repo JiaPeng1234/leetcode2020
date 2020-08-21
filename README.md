@@ -38,7 +38,8 @@ leetcode 2020 guide by huahua
   ```python
   No:  def complex(real, imag = 0.0): return magic(r = real, i = imag)
   ```
-- 算术运算符两边都加上一个空格.  
+- 如果语句中有不同优先级的运算符，请在最低级运算符符周围添加一个空格（例如有乘除加减，加减就是最低级运算符）  
+- 如果语句中有不同优先级的运算符，优先运算的运算符不用添加空格
 
   ```python
   Yes: x = 1 + 2
@@ -46,14 +47,24 @@ leetcode 2020 guide by huahua
   ```python
   No:  x = a/3
   ```
-  例外：在if等条件句或是函数的参数中时不加空格.  
+
+  ```python
+  YES:
+  i = i + 1
+  submitted += 1
+  x = x*2 - 1
+  hypot2 = x*x + y*y
+  c = (a+b) * (a-b)
+  ```
+  ```python
+  NO:
+  i=i+1
+  submitted +=1
+  x = x * 2 - 1
+  hypot2 = x * x + y * y
+  c = (a + b) * (a - b)
+  ```
   
-  ```python
-  Yes: if x = 1+2:
-  ```
-  ```python
-  No:  if x = a / 3:
-  ```
 - 不要在逗号, 分号, 冒号前面加空格, 但应该在它们后面加(除了在行尾).  
 
   ```python
