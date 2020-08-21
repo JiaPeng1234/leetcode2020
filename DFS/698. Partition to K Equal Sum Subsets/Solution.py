@@ -16,7 +16,7 @@ class Solution:
         
         target = add / k
         nums.sort(reverse=True)
-        if nums[0] > target:
+        if nums[0] > target:    # pruning, if not implemented, time limit exceeded
             return False
         
         def dfs(target, rest, mask, k):
@@ -33,6 +33,9 @@ class Solution:
                     return True
                 mask[i] = 0
             return False
+        
+        mask = [0] * len(nums)
+        return dfs(target, target, mask, k)
         
         mask = [0] * len(nums)
         return dfs(target, target, mask, k)
