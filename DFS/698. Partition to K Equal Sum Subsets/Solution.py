@@ -4,7 +4,6 @@
 # Partition problem using DFS
 # Runtime: 132 ms, faster than 47.77% of Python3 online submissions for Partition to K Equal Sum Subsets.
 # Memory Usage: 13.8 MB, less than 86.54% of Python3 online submissions for Partition to K Equal Sum Subsets.
-# DFS框架参考5：此方法可以作为DFS参考框架
 class Solution:
     def canPartitionKSubsets(self, nums: List[int], k: int) -> bool:
         if k == 1:
