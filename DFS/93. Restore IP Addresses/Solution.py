@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/restore-ip-addresses/
 
 # By Jiapeng
-# DFS
+# DFS partition problem
 # Runtime: 40 ms, faster than 53.06% of Python3 online submissions for Restore IP Addresses.
 # Memory Usage: 13.7 MB, less than 90.70% of Python3 online submissions for Restore IP Addresses.
 # DFS框架参考5：此方法可以作为DFS参考框架
