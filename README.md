@@ -64,7 +64,25 @@ leetcode 2020 guide by huahua
   hypot2 = x * x + y * y
   c = (a + b) * (a - b)
   ```
+- 条件句中、函数参数中的运算符加不加空格也应该符合上述两原则：  
+- 对于数组中的算术运算符，方便起见，暂时不需在两边加空格：  
+
+  ```python
+  Yes: if x = 1 + 2:
+  ```
+  ```python
+  No:  if x = a/3:
+  ```
   
+  ```python
+  Yes:  self.dfs(s, count + 1, ans, cur + s[i:i+2] + '.', i + 2)
+  ```
+  ```python
+  No:   self.dfs(s, count + 1, ans, cur + s[i:i + 2] + '.', i + 2)
+  ```
+  ```python
+  No:   self.dfs(s, count+1, ans, cur+s[i:i+2]+'.', i+2)
+  ```
 - 不要在逗号, 分号, 冒号前面加空格, 但应该在它们后面加(除了在行尾).  
 
   ```python
