@@ -28,8 +28,7 @@ class Solution:
                                     # ["2.5.5.135","2.5.5.35","2.5.5.5","2.5.52.135","2.5.52.35","2.5.52.5","2...
                                     # Expected
                                     # ["255.255.11.135","255.255.111.35"]
-            if i + 1 <= len(s):
-                self.dfs(s, count + 1, ans, cur + s[i] + '.', i + 1)    # for 1-digit IP
+            self.dfs(s, count + 1, ans, cur + s[i] + '.', i + 1)    # for 1-digit IP
             if s[i] != '0' and i + 2 <= len(s):     # for 2-digits IP
                 self.dfs(s, count + 1, ans, cur + s[i:i+2] + '.', i + 2)
                 if s[i:i+3] <= "255" and i + 3 <= len(s):   # for 3-digits IP
