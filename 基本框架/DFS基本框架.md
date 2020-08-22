@@ -1,4 +1,5 @@
-## 1. 基础模板
+## 1. 模板
+### a. DFS基本模板
 ```python
 # code in python
 nums=[...]
@@ -23,7 +24,36 @@ func dfs(n,d,s,cur):
 for i=0 to m:   # 调用dfs
     dfs(i,0,0,[None]*i)
 ```
+### b. DFS-partition问题模板
 
+```python
+# code in python
+# 适用于连续分割问题
+# 以131题python解法一为模板
+def partition(self, s: str) -> List[List[str]]:
+    ans = []
+    self.dfs(ans, [], 0, s)
+    return ans
+
+def dfs(self, ans, cur, starter, s):
+    """
+    ans 最终答案
+    cur 最终答案的一个子集
+    starter 本次dfs递归分段开始的第一个字符的角标
+    s 题目给的字符串
+    """
+    if starter == len(s):   # 如果starter已经是s最后一位的后一位了，说明字符串分割完毕
+        ans.append(cur)
+        return
+    for end in range(starter, starter + length):  # end代表当前选取的这段字符串最后一位在s中的角标
+        if end < len(s):    # end 最后一位不可以out of range
+            if not self.isPalindrome(s, starter, end):   # 不符合条件，continue
+                continue
+            self.dfs(ans, cur + [s[starter:i+1]], end + 1, s)   # 以end+1作为starter开始下一次递归
+
+def isPalindrome(self, s, left, right):
+    blahblahblah
+```
 ## 2. 几种典型模板
 
 按照顺序观看：
@@ -42,5 +72,5 @@ https://github.com/XincredibleY/leetcode2020/blob/master/DFS/79.%20Word%20Search
 
 5. partition problem 参考698. Partition to K Equal Sum Subsets的python解法Solution1：
 https://github.com/XincredibleY/leetcode2020/edit/master/DFS/698.%20Partition%20to%20K%20Equal%20Sum%20Subsets/Solution.py
-以及：参考93. Restore IP Addresses的python解法Solution1：
+以及：参考93. Restore IP Addresses的python解法Solution2：
 https://github.com/XincredibleY/leetcode2020/blob/master/DFS/93.%20Restore%20IP%20Addresses/Solution.py
