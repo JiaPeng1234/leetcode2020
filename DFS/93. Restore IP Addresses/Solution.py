@@ -29,7 +29,7 @@ class Solution:
                                     # Expected
                                     # ["255.255.11.135","255.255.111.35"]
             self.dfs(s, count + 1, ans, cur + s[i] + '.', i + 1)    # for 1-digit IP
-            if s[i] != '0' and i + 2 <= len(s):     # for 2-digits IP
+            if i + 2 <= len(s) and s[i] != '0':     # for 2-digits IP
                 self.dfs(s, count + 1, ans, cur + s[i:i+2] + '.', i + 2)
-                if s[i:i+3] <= "255" and i + 3 <= len(s):   # for 3-digits IP
+                if i + 3 <= len(s) and s[i:i+3] <= "255":   # for 3-digits IP
                     self.dfs(s, count + 1, ans, cur + s[i:i+3] + '.', i + 3)
