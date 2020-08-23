@@ -26,7 +26,7 @@ class Solution:
                         for r in right:
                             cur.append(opts[s[i]](l, r))
             if not cur:
-                return [int(s)]
+                cur.append(int(s))
             array[s] = cur
             return cur
         
