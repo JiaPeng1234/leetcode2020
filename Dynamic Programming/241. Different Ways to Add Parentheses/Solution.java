@@ -2,7 +2,7 @@
 
 /**
 By Jiapeng
-记忆化递归
+记忆化递归求解分段问题
 Runtime: 1 ms, faster than 99.68% of Java online submissions for Different Ways to Add Parentheses.
 Memory Usage: 38.3 MB, less than 85.09% of Java online submissions for Different Ways to Add Parentheses.
 **/
