@@ -1,24 +1,54 @@
 # leetcode2020
 leetcode 2020 guide by huahua
 
-## Category
+## Catelog
 ```
-├─BFS
-├─Binary Search
-├─Binary Search Tree
-├─DFS
-│  ├─17. Letter Combinations of a Phone Number
-│  ├─39. Combination Sum
-│  ├─40. Combination Sum II
-│  ├─46. Permutation
-│  └─77. Combinations
-├─Dynamic Programming
-├─Graph
-├─List
-├─Tree
-└─旧表
+    ├─BFS
+    │  ├─127. Word Ladder
+    │  ├─542. 01 Matrix
+    │  ├─752. Open the Lock
+    │  ├─934. Shortest Bridge
+    │  └─994. Rotting Oranges
+    ├─Binary Search
+    ├─Binary Search Tree
+    ├─DFS
+    │  ├─131. Palindrome Partitioning
+    │  ├─17. Letter Combinations of a Phone Number
+    │  ├─22. Generate Parentheses
+    │  ├─39. Combination Sum
+    │  ├─40. Combination Sum II
+    │  ├─46. Permutation
+    │  ├─47. Permutations II
+    │  ├─698. Partition to K Equal Sum Subsets
+    │  ├─77. Combinations
+    │  ├─78. Subsets
+    │  ├─784. Letter Case Permutation
+    │  ├─79. Word Search
+    │  ├─842. Split Array into Fibonacci Sequence
+    │  ├─90. Subsets II
+    │  └─93. Restore IP Addresses
+    ├─Dynamic Programming
+    │  └─241. Different Ways to Add Parentheses
+    ├─Graph
+    ├─List
+    ├─Tree
+    ├─基本框架
+    └─旧表
+        └─pics
 
 ```
+
+## Learning path
+BY Jiapeng
+- Leetcode path
+DFS/BFS -> sort(being able to write all kinds of sorting examples) -> Binary Search -> Bit Manipulation -> basic BST -> 后面的顺序待定 -> graph, dp, basic object-oriented design,  Heap, Priority Queue, linked list -> 再下一层，后面的顺序待定 -> Balanced search trees(including AVL, Splay trees, red-black tree etc.), Binary Heap etc. -> 再下一层 -> 数据库，多线程 -> 再下一层 -> 系统设计。。。。 -> Later .....  
+
+- Gain efficiency by checking fundamentals before writing codes:  
+2 cores:  
+https://github.com/jwasham/coding-interview-university/blob/master/translations/README-cn.md#%E6%97%A5%E5%B8%B8%E8%AE%A1%E5%88%92  
+"Cracking the code interview"(uploaded in books catelog)  
+
+- check solutions here: HuaHua  https://www.youtube.com/watch?v=Ol1e4TOHvno&list=PLLuMmzMTgVK5Hy1qcWYZcd7wVQQ1v0AjX
 
 ## Code Style Guide
 ### Python
