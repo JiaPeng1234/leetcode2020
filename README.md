@@ -1,24 +1,46 @@
 # leetcode2020
 leetcode 2020 guide by huahua
 
-## Category
+## Catelog
 ```
-├─BFS
-├─Binary Search
-├─Binary Search Tree
-├─DFS
-│  ├─17. Letter Combinations of a Phone Number
-│  ├─39. Combination Sum
-│  ├─40. Combination Sum II
-│  ├─46. Permutation
-│  └─77. Combinations
-├─Dynamic Programming
-├─Graph
-├─List
-├─Tree
-└─旧表
+    ├─BFS
+    │  ├─127. Word Ladder
+    │  ├─542. 01 Matrix
+    │  ├─752. Open the Lock
+    │  ├─934. Shortest Bridge
+    │  └─994. Rotting Oranges
+    ├─Binary Search
+    ├─Binary Search Tree
+    ├─DFS
+    │  ├─131. Palindrome Partitioning
+    │  ├─17. Letter Combinations of a Phone Number
+    │  ├─22. Generate Parentheses
+    │  ├─39. Combination Sum
+    │  ├─40. Combination Sum II
+    │  ├─46. Permutation
+    │  ├─47. Permutations II
+    │  ├─698. Partition to K Equal Sum Subsets
+    │  ├─77. Combinations
+    │  ├─78. Subsets
+    │  ├─784. Letter Case Permutation
+    │  ├─79. Word Search
+    │  ├─842. Split Array into Fibonacci Sequence
+    │  ├─90. Subsets II
+    │  └─93. Restore IP Addresses
+    ├─Dynamic Programming
+    │  └─241. Different Ways to Add Parentheses
+    ├─Graph
+    ├─List
+    ├─Tree
+    ├─基本框架
+    └─旧表
+        └─pics
 
 ```
+
+## Learning path
+BY Jiapeng
+always checking basic fundamentals before writing Solution classes
 
 ## Code Style Guide
 ### Python
