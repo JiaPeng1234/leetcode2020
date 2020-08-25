@@ -48,7 +48,7 @@ DFS/BFS -> sort(being able to write all kinds of sorting examples) -> Binary Sea
 https://github.com/jwasham/coding-interview-university/blob/master/translations/README-cn.md#%E6%97%A5%E5%B8%B8%E8%AE%A1%E5%88%92  
 "Cracking the code interview"(uploaded in books catelog)  
 
-- check solutions here: HuaHua  https://www.youtube.com/watch?v=Ol1e4TOHvno&list=PLLuMmzMTgVK5Hy1qcWYZcd7wVQQ1v0AjX
+- Also check solutions here: HuaHua  https://www.youtube.com/watch?v=Ol1e4TOHvno&list=PLLuMmzMTgVK5Hy1qcWYZcd7wVQQ1v0AjX
 
 ## Code Style Guide
 ### Python
