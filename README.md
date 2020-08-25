@@ -40,7 +40,15 @@ leetcode 2020 guide by huahua
 
 ## Learning path
 BY Jiapeng
-always checking basic fundamentals before writing Solution classes
+- Leetcode path
+DFS/BFS -> sort(being able to write all kinds of sorting examples) -> Binary Search -> Bit Manipulation -> basic BST -> 后面的顺序待定 -> graph, dp, basic object-oriented design,  Heap, Priority Queue, linked list -> 再下一层，后面的顺序待定 -> Balanced search trees(including AVL, Splay trees, red-black tree etc.), Binary Heap etc. -> 再下一层 -> 数据库，多线程 -> 再下一层 -> 系统设计。。。。 -> Later .....  
+
+- Gain efficiency by checking fundamentals before writing codes:  
+2 cores:  
+https://github.com/jwasham/coding-interview-university/blob/master/translations/README-cn.md#%E6%97%A5%E5%B8%B8%E8%AE%A1%E5%88%92  
+"Cracking the code interview"(uploaded in books catelog)  
+
+- check solutions here: HuaHua  https://www.youtube.com/watch?v=Ol1e4TOHvno&list=PLLuMmzMTgVK5Hy1qcWYZcd7wVQQ1v0AjX
 
 ## Code Style Guide
 ### Python
