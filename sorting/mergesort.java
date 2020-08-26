@@ -1,3 +1,4 @@
+// run time complexity O(nlogn) in average and worst case. space complexity O(n)
 package sorting;
 
 public class mergesort {
