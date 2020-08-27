@@ -17,7 +17,7 @@ public Quicksort{
             System.out.print(i + ",");
     }
     
-    public void quick_sort(int[] array, int low, int high){
+    private void quick_sort(int[] array, int low, int high){
         int index = partition(array, low, high);
         if(index - 1 > low)     // 左数组，一定要low ~ index - 1
             partition(array, low, index - 1);
@@ -25,7 +25,7 @@ public Quicksort{
             partition(array, index, high);
     }
     
-    public int partition(int[] array, int low, int high){
+    private int partition(int[] array, int low, int high){
         int pivot = array[(low+high) / 2];
         while(low <= high){     // 一定要<=而不是<, 这是为了保证low和high产生交错那么low就是index，而index - 1 ~ low就一定都小于pivot，尽管有的时候会造成pivot值并不在两边的分割边界上
             while(array[low] < pivot)   //一定要<而不是<=，我们不想跳过和pivot相等的数值，想象如果数组所有数值都是相等的，那么我们一直跳过会得到一个左右及其不均衡的组合，会大大损害效率，总之死记就好
@@ -46,10 +46,43 @@ public Quicksort{
 
 
 
-
-
 // 方法二：容易理解与书写，建议使用，但是细节仍然需要一些死记硬背，具体步骤参见geeksforgeeks的教程：https://www.geeksforgeeks.org/quick-sort/
 // 总结下来让人容易理解的一段话：每次都把最后一个element作为pivot，使用i，j两个哨兵来遍历前n-1个element，（其中初始化i=low-1，而j=low），
 // 只有当j遇到比pivot值小的element的时候，才让i++，同时置换array[i]和array[j]，也就是说，保证了array[0]-array[i]永远全部都是数值小于pivot的元素
 // 而i永远指向这一段全部小于pivot的最右端，当j遍历array结束的时候，置换array[i+1]和array[high], 使得最后high所在的位置就是分割点，分割点的左侧元素全部小于它
 // 而右侧元素全部大于他
+public class Quicksort2{
+    public static void main(String[] args){
+        int[] array = {1, 3, 2, 4};
+        Quicksort2 a = new Quicksort2();
+        a.quick_sort(array, 0, array.length - 1);
+        for(int i: array)
+            System.out.print(i + ",");
+    }
+
+    private void quick_sort(int[] array, int low, int high){
+        if(low < high){
+            int index = partition(array, low, high);
+            quick_sort(array, low, index - 1);
+            quick_sort(array, index + 1, high);
+        }
+    }
+
+    private int partition(int[] array, int low, int high){
+        int pivot = array[high];    // pick last element as pivot
+        int i = low - 1;
+        for(int j = low; j < high; j++){
+            if(array[j] < pivot){
+                i++;
+                int tmp = array[i];     // swap array[i] and array[j] so that array[0~i] < pivot
+                array[i] = array[j];
+                array[j] = tmp;
+            }
+        }
+        i++;
+        int tmp = array[i];     // swap pivot with i, elements in pivot left: < all pivot, elements in pivot right: >= pivot
+        array[i] = array[high];
+        array[high] = tmp;
+        return i;
+    }
+}
