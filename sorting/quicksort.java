@@ -8,8 +8,40 @@
 // 方法一：使用subarray中间一个数作为pivot，逼格稍微比方法二高一些，稍微可以避免出现最坏情况，但是代码比较难以理解，很多地方要不要加等号很烧脑，如果使用该方法建议死记硬背下来
 // 这个方法还可以有提升空间，提升成逼格最高的quicksort，那就是每次不使用坐标为中间的element作为pivot，而是在[beginelement, endelement, middleelement]之中选取中间数作为pivot，
 // 基本上可以避免出现最坏情况
-public quicksort{
-    public void main(String[] args)
+public Quicksort{
+    public static void main(String[] args){
+        Quicksort a = new Quicksort();
+        int[] array = {1,3,2,4};
+        a.quick_sort(array, 0, array.length - 1);
+        for(int i: array)   //  打印数组
+            System.out.print(i + ",");
+    }
+    
+    public void quick_sort(int[] array, int low, int high){
+        int index = partition(array, low, high);
+        if(index - 1 > low)     // 左数组，一定要low ~ index - 1
+            partition(array, low, index - 1);
+        if(index < high)        // 右数组，一定要index + 1 ~ high
+            partition(array, index, high);
+    }
+    
+    public int partition(int[] array, int low, int high){
+        int pivot = array[(low+high) / 2];
+        while(low <= high){     // 一定要<=而不是<, 这是为了保证low和high产生交错那么low就是index，而index - 1 ~ low就一定都小于pivot，尽管有的时候会造成pivot值并不在两边的分割边界上
+            while(array[low] < pivot)   //一定要<而不是<=，我们不想跳过和pivot相等的数值，想象如果数组所有数值都是相等的，那么我们一直跳过会得到一个左右及其不均衡的组合，会大大损害效率，总之死记就好
+                low++;
+            while(array[high] > pivot)
+                high--;
+            if(low <= high){    // 一定要带=，否则有陷入while无限循环的危险
+                int tmp = array[low];
+                array[low] = array[high];
+                array[high] = tmp;
+                low++;
+                high--;
+            }
+        }
+        return low;     // 一定要返回左边，返回右边有可能造成无限划分相同的数组无限循环
+    }
 }
 
 
