@@ -4,6 +4,7 @@
 // quicksort average space complexity O(logN)
 
 // TODO: 把该方法翻译成漂亮的python代码
+package sorting;
 
 // 方法一：使用subarray中间一个数作为pivot，逼格稍微比方法二高一些，稍微可以避免出现最坏情况，但是代码比较难以理解，很多地方要不要加等号很烧脑，如果使用该方法建议死记硬背下来
 // 这个方法还可以有提升空间，提升成逼格最高的quicksort，那就是每次不使用坐标为中间的element作为pivot，而是在[beginelement, endelement, middleelement]之中选取中间数作为pivot，
