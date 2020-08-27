@@ -1,11 +1,10 @@
 class Mergesort:
   def mergesort(self, array, left, right):
-    if left == right:
-      return
-    middle = int((left+right) / 2)
-    self.mergesort(array, left, middle)
-    self.mergesort(array, middle + 1, right)
-    self.merge(array, left, right, middle)
+    if left < right:
+      middle = int((left+right) / 2)
+      self.mergesort(array, left, middle)
+      self.mergesort(array, middle + 1, right)
+      self.merge(array, left, right, middle)
     
   def merge(self, array, left, right, middle):
     helper = array[:]
