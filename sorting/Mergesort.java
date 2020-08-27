@@ -1,10 +1,10 @@
 // run time complexity O(nlogn) in average and worst case. space complexity O(n)
 package sorting;
 
-public class mergesort {
+public class Mergesort {
     public static void main(String[] args) {
         int[] array = {1,5,6,234,2,6,12,74,1,53,62,-1,-42};
-        mergesort a = new mergesort();
+        Mergesort a = new Mergesort();
         a.mergesort(array);
         for(int i: array)
             System.out.print(i + ",");
