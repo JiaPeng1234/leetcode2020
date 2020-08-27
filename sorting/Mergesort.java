@@ -31,8 +31,8 @@ public class Mergesort {
             helper[i] = array[i];
         }
 
-        int current = 0;
-        int leftlow = 0, rightlow = middle + 1;
+        int current = low;
+        int leftlow = low, rightlow = middle + 1;
         /* iterate through helper array. Compare the left and right half, copying back the smaller element from the two halves into the original array */
         while(leftlow <= middle && rightlow <= high){
             if(helper[leftlow] <= helper[rightlow]){
