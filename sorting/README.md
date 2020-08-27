@@ -4,4 +4,7 @@
   以及算法in-place-update属性  
   PS：桶排序？  
   bonus：链表的排序？  
-  
+    
+    
+    
+主要方法都在java里写了，python是同样的道理
