@@ -45,7 +45,7 @@ def dfs(self, ans, cur, starter, s):
     if starter == len(s):   # 如果starter已经是s最后一位的后一位了，说明字符串分割完毕
         ans.append(cur)
         return
-    for end in range(starter, starter + length):  # end代表当前选取的这段字符串最后一位在s中的角标
+    for end in range(starter, starter + length):  # end代表当前选取的这段字符串最后一位在s中的角标, length代表该段希望的长度
         if end < len(s):    # end 最后一位不可以out of range
             if not self.isPalindrome(s, starter, end):   # 不符合条件，continue
                 continue
