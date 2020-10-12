@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/clone-graph/
 
 # By Jiapeng
-# Graph deep copy node, need a queue and a dict
+# Graph deep copy node, need a queue and a dict, queue + hashtable
 # Runtime: 40 ms, faster than 59.33% of Python3 online submissions for Clone Graph.
 # Memory Usage: 14.1 MB, less than 99.99% of Python3 online submissions for Clone Graph.
 
