@@ -1,6 +1,7 @@
 # https://leetcode.com/problems/copy-list-with-random-pointer/
 
 # By Jiapeng
+# queue + hashtable
 # Runtime: 32 ms, faster than 90.79% of Python3 online submissions for Copy List with Random Pointer.
 # Memory Usage: 14.7 MB, less than 45.32% of Python3 online submissions for Copy List with Random Pointer.
 
