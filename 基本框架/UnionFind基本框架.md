@@ -24,9 +24,9 @@ class UnionFindSet:
 
 ## 2. 基本原理
 
-![](./assets/001.PNG)  
-
-![](./assets/002.PNG)  
+<img src="./assets/001.PNG" width="600"/>  
+<br />
+<img src="./assets/002.PNG" width="700"/>  
 
 ## 3. 例题
 
